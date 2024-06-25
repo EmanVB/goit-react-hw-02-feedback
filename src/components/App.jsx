@@ -43,13 +43,17 @@ export class App extends Component {
         </Section>
 
         <Section title="Statistics">
-          <Statistics
-            good={good}
-            neutral={neutral}
-            bad={bad}
-            total={total}
-            positive={positive}
-          />
+          {total === 0 ? (
+            <p> No feedback given. </p>
+          ) : (
+            <Statistics
+              good={good}
+              neutral={neutral}
+              bad={bad}
+              total={total}
+              positive={positive}
+            />
+          )}
         </Section>
       </>
     );
