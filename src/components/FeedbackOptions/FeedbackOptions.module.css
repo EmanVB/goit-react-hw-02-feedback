@@ -1,0 +1,10 @@
+.options {
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  text-transform: capitalize;
+}
