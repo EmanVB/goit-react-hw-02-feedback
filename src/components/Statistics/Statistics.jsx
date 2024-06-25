@@ -3,20 +3,20 @@ import css from './Statistics.module.css';
 export const Statistics = ({ good, neutral, bad, total, positive }) => {
   return (
     <div>
-      <p>
-        Good: <span>{good}</span>
+      <p className={css.label}>
+        Good: <span className={css.value}>{good}</span>
       </p>
-      <p>
-        Neutral: <span>{neutral}</span>
+      <p className={css.label}>
+        Neutral: <span className={css.value}>{neutral}</span>
       </p>
-      <p>
-        Bad: <span>{bad}</span>
+      <p className={css.label}>
+        Bad: <span className={css.value}>{bad}</span>
       </p>
-      <p>
-        Total: <span>{total}</span>
+      <p className={css.label}>
+        Total: <span className={css.value}>{total}</span>
       </p>
-      <p>
-        Positive Feedback: <span>{positive}%</span>
+      <p className={css.label}>
+        Positive Feedback: <span className={css.value}>{positive}%</span>
       </p>
     </div>
   );
